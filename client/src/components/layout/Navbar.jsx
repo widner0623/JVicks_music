@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+
+import artist from "../../data/artist";
 
 const links = [
   { label: "Music", href: "#music" },
@@ -11,11 +14,14 @@ const links = [
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const sections = ["music", "about", "genres", "vote"];
 
     const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+
       let current = "home";
 
       sections.forEach((section) => {
@@ -42,27 +48,62 @@ function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
+  const firstLetter = artist.name.charAt(0);
+  const restOfName = artist.name.slice(1).toUpperCase();
+
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-lime-400/15 bg-black/90 backdrop-blur-xl">
+    <header
+      className={`fixed left-0 top-0 z-50 w-full border-b transition-all duration-300 ${
+        scrolled
+          ? "border-[#c8ff00]/15 bg-black/90 shadow-[0_10px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl"
+          : "border-transparent bg-black/40 backdrop-blur-md"
+      }`}
+    >
       <div className="mx-auto flex h-[78px] w-[min(1200px,calc(100%-48px))] items-center justify-between">
         <a
           href="#home"
-          className="font-serif text-xl font-bold tracking-tight"
+          onClick={() => setMenuOpen(false)}
+          className="font-serif text-xl font-bold tracking-tight text-white transition hover:opacity-80"
+          aria-label={`${artist.name} home`}
         >
-          <span className="text-[#c8ff00]">J</span> VICK
+          <span className="text-[#c8ff00]">
+            {firstLetter}
+          </span>{" "}
+          {restOfName}
         </a>
 
         <nav className="hidden items-center gap-10 md:flex">
           {links.map((link) => {
             const section = link.href.replace("#", "");
-
             const isActive = activeSection === section;
 
             return (
               <a
                 key={link.href}
                 href={link.href}
-                className={`relative text-xs uppercase tracking-[0.18em] transition-colors ${
+                className={`group relative text-xs uppercase tracking-[0.18em] transition-colors duration-300 ${
                   isActive
                     ? "text-[#c8ff00]"
                     : "text-neutral-500 hover:text-white"
@@ -72,7 +113,9 @@ function Navbar() {
 
                 <span
                   className={`absolute -bottom-2 left-0 h-px bg-[#c8ff00] transition-all duration-300 ${
-                    isActive ? "w-full" : "w-0"
+                    isActive
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
                   }`}
                 />
               </a>
@@ -81,28 +124,90 @@ function Navbar() {
         </nav>
 
         <button
-          className="flex items-center justify-center text-white md:hidden"
+          type="button"
+          className="relative z-50 flex h-10 w-10 items-center justify-center border border-white/10 bg-white/5 text-white transition hover:border-[#c8ff00]/40 hover:text-[#c8ff00] md:hidden"
           onClick={() => setMenuOpen((prev) => !prev)}
-          aria-label="Toggle navigation"
+          aria-label={menuOpen ? "Close navigation" : "Open navigation"}
+          aria-expanded={menuOpen}
         >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
-      {menuOpen && (
-        <nav className="flex flex-col border-t border-lime-400/10 bg-black px-6 py-4 md:hidden">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
+      <AnimatePresence>
+        {menuOpen && (
+          <>
+            <motion.div
+              className="fixed inset-0 top-[78px] bg-black/70 backdrop-blur-sm md:hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
               onClick={() => setMenuOpen(false)}
-              className="border-b border-white/5 py-4 text-xs uppercase tracking-[0.18em] text-neutral-400 transition-colors hover:text-[#c8ff00]"
+            />
+
+            <motion.nav
+              className="relative z-40 flex flex-col border-t border-[#c8ff00]/10 bg-[#050505] px-6 py-4 md:hidden"
+              initial={{
+                opacity: 0,
+                y: -15,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              exit={{
+                opacity: 0,
+                y: -15,
+              }}
+              transition={{
+                duration: 0.25,
+                ease: [0.22, 1, 0.36, 1],
+              }}
             >
-              {link.label}
-            </a>
-          ))}
-        </nav>
-      )}
+              {links.map((link, index) => {
+                const section = link.href.replace("#", "");
+                const isActive = activeSection === section;
+
+                return (
+                  <motion.a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className={`flex items-center justify-between border-b border-white/5 py-5 text-xs uppercase tracking-[0.18em] transition-colors ${
+                      isActive
+                        ? "text-[#c8ff00]"
+                        : "text-neutral-400 hover:text-white"
+                    }`}
+                    initial={{
+                      opacity: 0,
+                      x: -12,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      x: 0,
+                    }}
+                    transition={{
+                      delay: index * 0.04,
+                      duration: 0.25,
+                    }}
+                  >
+                    <span>{link.label}</span>
+
+                    <span
+                      className={`h-1.5 w-1.5 rounded-full transition ${
+                        isActive
+                          ? "bg-[#c8ff00]"
+                          : "bg-neutral-800"
+                      }`}
+                    />
+                  </motion.a>
+                );
+              })}
+            </motion.nav>
+          </>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

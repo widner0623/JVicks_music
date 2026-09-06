@@ -5,10 +5,14 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:40",
-    spotify: "https://open.spotify.com/track/3rAYC7uYjQuEn9DPLOeMNa?si=df6fbd2a5982410b",
-    appleMusic: "https://music.apple.com/us/song/tell-me-what-to-do/6805496736",
-    youtubeMusic: "https://music.youtube.com/watch?v=wRVinMoaJes&si=e-36EB8sOBhvTRzJ",
-    amazonMusic: "https://music.amazon.com/albums/B0HGMLTX9R?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_cYCKWqUfwIAGYFV01yRNHqizi",
+    spotify:
+      "https://open.spotify.com/track/3rAYC7uYjQuEn9DPLOeMNa?si=df6fbd2a5982410b",
+    appleMusic:
+      "https://music.apple.com/us/song/tell-me-what-to-do/6805496736",
+    youtubeMusic:
+      "https://music.youtube.com/watch?v=wRVinMoaJes&si=e-36EB8sOBhvTRzJ",
+    amazonMusic:
+      "https://music.amazon.com/albums/B0HGMLTX9R?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_cYCKWqUfwIAGYFV01yRNHqizi",
   },
   {
     id: 2,
@@ -16,10 +20,14 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2025",
     duration: "3:35",
-    spotify: "https://open.spotify.com/track/0wDbd2QvXXIh8tfdQUKZ5w?si=b54735e6fdb9437b",
-    appleMusic: "https://music.apple.com/us/song/take-it-to-the-ring/1837260980",
-    youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_mAus70jZwk_3h7TPJtvhMWwSjqscWz8F8&si=mfC40TjIUiJQzH5S",
-    amazonMusic: "https://music.amazon.com/albums/B0H68WHWCB?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_fw8rHqvCoPRTLvOWK543v9CYR",
+    spotify:
+      "https://open.spotify.com/track/0wDbd2QvXXIh8tfdQUKZ5w?si=b54735e6fdb9437b",
+    appleMusic:
+      "https://music.apple.com/us/song/take-it-to-the-ring/1837260980",
+    youtubeMusic:
+      "https://music.youtube.com/playlist?list=OLAK5uy_mAus70jZwk_3h7TPJtvhMWwSjqscWz8F8&si=mfC40TjIUiJQzH5S",
+    amazonMusic:
+      "https://music.amazon.com/albums/B0H68WHWCB?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_fw8rHqvCoPRTLvOWK543v9CYR",
   },
   {
     id: 3,
@@ -27,10 +35,14 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:09",
-    spotify: "https://open.spotify.com/track/1RjoMNEiGhfAaIRi9GLgb8?si=f67f89ddc6664be6",
-    appleMusic: "https://music.apple.com/us/song/big-dog/6794144060",
-    youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_moZxd46nFr4tKhd85BNYICrfXZOuKe75E&si=-TVuiR06AixQdUZ_",
-    amazonMusic: "https://music.amazon.com/albums/B0HB9D5H8S?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_QC2rTkZmxA71fJLjv4qD3KuZz",
+    spotify:
+      "https://open.spotify.com/track/1RjoMNEiGhfAaIRi9GLgb8?si=f67f89ddc6664be6",
+    appleMusic:
+      "https://music.apple.com/us/song/big-dog/6794144060",
+    youtubeMusic:
+      "https://music.youtube.com/playlist?list=OLAK5uy_moZxd46nFr4tKhd85BNYICrfXZOuKe75E&si=-TVuiR06AixQdUZ_",
+    amazonMusic:
+      "https://music.amazon.com/albums/B0HB9D5H8S?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_QC2rTkZmxA71fJLjv4qD3KuZz",
   },
   {
     id: 4,
@@ -38,21 +50,29 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:48",
-    spotify: "https://open.spotify.com/track/2erViu6yUvNRwuy7Zu1l5z?si=2f0c19452ae64953",
-    appleMusic: "https://music.apple.com/us/song/maybe-one-day/6792867573",
-    youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_lB2LK8Ua01nyH_zfrfTx2WbdxFdwdOk_M&si=xw5o5ZmwM9ZZuwqL",
-    amazonMusic: "https://music.amazon.com/albums/B0H9P1MFZR?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_QlTTsMJQAHf6LLl8E7NMsQlBd",
+    spotify:
+      "https://open.spotify.com/track/2erViu6yUvNRwuy7Zu1l5z?si=2f0c19452ae64953",
+    appleMusic:
+      "https://music.apple.com/us/song/maybe-one-day/6792867573",
+    youtubeMusic:
+      "https://music.youtube.com/playlist?list=OLAK5uy_lB2LK8Ua01nyH_zfrfTx2WbdxFdwdOk_M&si=xw5o5ZmwM9ZZuwqL",
+    amazonMusic:
+      "https://music.amazon.com/albums/B0H9P1MFZR?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_QlTTsMJQAHf6LLl8E7NMsQlBd",
   },
   {
     id: 5,
     title: "Good Problems",
-    genre: "Drill",
+    genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:08",
-    spotify: "https://open.spotify.com/track/7JHPbTe24Mg1IKSIhFsjtt?si=64414aeeeba44eed",
-    appleMusic: "https://music.apple.com/us/song/good-problems/6776294191",
-    youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_kbTnTE1-SynZ_wWJqrO4X03qJDn2Gm7Bk&si=NGb-cz9NPWcvh4Dd",
-    amazonMusic: "https://music.amazon.com/albums/B0H3VV1GKV?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_0GWPeIEckaSHvg7yrZSRne4BR",
+    spotify:
+      "https://open.spotify.com/track/7JHPbTe24Mg1IKSIhFsjtt?si=64414aeeeba44eed",
+    appleMusic:
+      "https://music.apple.com/us/song/good-problems/6776294191",
+    youtubeMusic:
+      "https://music.youtube.com/playlist?list=OLAK5uy_kbTnTE1-SynZ_wWJqrO4X03qJDn2Gm7Bk&si=NGb-cz9NPWcvh4Dd",
+    amazonMusic:
+      "https://music.amazon.com/albums/B0H3VV1GKV?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_0GWPeIEckaSHvg7yrZSRne4BR",
   },
   {
     id: 6,
@@ -60,10 +80,14 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:02",
-    spotify: "https://open.spotify.com/track/1ecdlReDMlwSSHUbt6OvBL?si=81ace4becfab4ad6",
-    appleMusic: "https://music.apple.com/us/song/playin-with-my-mental/6779693500",
-    youtubeMusic: "https://music.youtube.com/playlist?list=OLAK5uy_nqfUdBOlPZLBcmUKjsvYcMpg0MXHJda5M&si=CwQS4lnDnSetqIYE",
-    amazonMusic: "https://music.amazon.com/albums/B0H51XV3B3?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_2MZRjAzOotdA8UvpjVvgVzYZu",
+    spotify:
+      "https://open.spotify.com/track/1ecdlReDMlwSSHUbt6OvBL?si=81ace4becfab4ad6",
+    appleMusic:
+      "https://music.apple.com/us/song/playin-with-my-mental/6779693500",
+    youtubeMusic:
+      "https://music.youtube.com/playlist?list=OLAK5uy_nqfUdBOlPZLBcmUKjsvYcMpg0MXHJda5M&si=CwQS4lnDnSetqIYE",
+    amazonMusic:
+      "https://music.amazon.com/albums/B0H51XV3B3?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_2MZRjAzOotdA8UvpjVvgVzYZu",
   },
 ];
 
