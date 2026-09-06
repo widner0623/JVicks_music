@@ -54,6 +54,7 @@ function TrackCard({ track }) {
         {track.spotify && (
           <a
             href={track.spotify}
+            target="_blank"
             className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
           >
             <FaSpotify size={13} />
@@ -64,6 +65,7 @@ function TrackCard({ track }) {
         {track.appleMusic && (
           <a
             href={track.appleMusic}
+            target="_blank"
             className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
           >
             <BsAppleMusic size={13} />
@@ -74,6 +76,7 @@ function TrackCard({ track }) {
         {track.youtubeMusic && (
           <a
             href={track.youtubeMusic}
+            target="_blank"
             className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
           >
             <FaYoutube size={13} />
@@ -84,6 +87,7 @@ function TrackCard({ track }) {
         {track.amazonMusic && (
           <a
             href={track.amazonMusic}
+            target="_blank"
             className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
           >
             <FaAmazon size={13} />

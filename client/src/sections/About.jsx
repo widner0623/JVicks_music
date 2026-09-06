@@ -110,7 +110,7 @@ function About() {
 
               {/* Spotify */}
               <a
-                href="#"
+                href="https://open.spotify.com/artist/4lcVqCwtomwOiZlReVv2fm?si=N94jLq9UQQ2_rdB8e4elsw"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="J Vick on Spotify"
@@ -126,7 +126,7 @@ function About() {
 
               {/* YouTube */}
               <a
-                href="#"
+                href="https://music.youtube.com/channel/UCKhrNXVT1IeBhgZJicnC7Ww?si=jXRAhza-yJLYtO17"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="J Vick on YouTube"

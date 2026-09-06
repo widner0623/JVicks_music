@@ -4,28 +4,28 @@ const genres = [
     number: "01",
     name: "Rap",
     description:
-      "Sharp delivery, heavy bars, and confident energy built around storytelling and presence.",
+      "Sharp delivery, hard-hitting bars, and confident energy driven by rhythm, storytelling, and raw expression.",
   },
   {
     id: 2,
     number: "02",
-    name: "Trap",
+    name: "Country",
     description:
-      "Dark production, heavy low end, and hard-hitting rhythms made for high-energy records.",
+      "Honest storytelling, memorable melodies, and down-to-earth emotion that bring a country edge to J Vick's sound.",
   },
   {
     id: 3,
     number: "03",
-    name: "R&B",
+    name: "Hip-Hop",
     description:
-      "Smooth melodies and reflective writing that bring a more melodic side to the sound.",
+      "Rhythm-driven production, versatile flows, and modern influences that blend classic hip-hop energy with J Vick's own style.",
   },
   {
     id: 4,
     number: "04",
-    name: "Drill",
+    name: "Rock",
     description:
-      "Aggressive cadence, tense production, and raw delivery designed to hit immediately.",
+      "Heavy guitars, powerful energy, and a raw attitude that push the music beyond traditional rap and hip-hop boundaries.",
   },
 ];
 

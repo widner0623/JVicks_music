@@ -17,7 +17,7 @@ function Hero() {
       <div className="relative z-10 mx-auto w-[min(1200px,calc(100%-48px))] pt-24">
         <div className="max-w-2xl">
           <p className="mb-7 text-xs font-bold uppercase tracking-[0.28em] text-[#c8ff00]">
-            Rap · Hip-Hop · Country · R&B
+            Rap · Hip-Hop · Country · Rock
           </p>
 
           <div className="mb-8">
@@ -32,8 +32,8 @@ function Hero() {
 
           <p className="mb-9 max-w-xl text-sm leading-7 text-neutral-300 md:text-base">
             J Vick doesn't follow trends — he sets them. Coming up through the
-            streets of Atlanta, J Vick built a sound that hits hard across rap,
-            trap, drill, and smooth R&B.
+            streets of Owensboro, J Vick built a sound that hits hard across rap,
+            country, hiphop, and more.
           </p>
 
           <div className="flex flex-wrap gap-4">
