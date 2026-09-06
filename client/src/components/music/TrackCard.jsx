@@ -1,9 +1,13 @@
 import {
-  Play,
-  Music2,
-  Cloud,
-  ExternalLink,
-} from "lucide-react";
+  FaInstagram,
+  FaSpotify,
+  FaYoutube,
+  FaAmazon,
+  FaPlayCircle,
+  FaSoundcloud, 
+} from "react-icons/fa";
+
+import { BsAppleMusic } from "react-icons/bs";
 
 function TrackCard({ track }) {
   return (
@@ -15,7 +19,7 @@ function TrackCard({ track }) {
             className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#c8ff00] text-[#c8ff00] transition hover:bg-[#c8ff00] hover:text-black"
             aria-label={`Play ${track.title}`}
           >
-            <Play size={18} fill="currentColor" />
+            <FaPlayCircle size={18} fill="currentColor" />
           </button>
 
           <div>
@@ -52,7 +56,7 @@ function TrackCard({ track }) {
             href={track.spotify}
             className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
           >
-            <Music2 size={13} />
+            <FaSpotify size={13} />
             Spotify
           </a>
         )}
@@ -62,7 +66,7 @@ function TrackCard({ track }) {
             href={track.appleMusic}
             className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
           >
-            <Music2 size={13} />
+            <BsAppleMusic size={13} />
             Apple Music
           </a>
         )}
@@ -72,7 +76,7 @@ function TrackCard({ track }) {
             href={track.youtubeMusic}
             className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
           >
-            <ExternalLink size={13} />
+            <FaYoutube size={13} />
             YouTube Music
           </a>
         )}
@@ -82,7 +86,7 @@ function TrackCard({ track }) {
             href={track.amazonMusic}
             className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
           >
-            <Music2 size={13} />
+            <FaAmazon size={13} />
             Amazon Music
           </a>
         )}
@@ -92,20 +96,11 @@ function TrackCard({ track }) {
             href={track.soundcloud}
             className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
           >
-            <Cloud size={13} />
+            <FaSoundcloud size={13} />
             SoundCloud
           </a>
         )}
 
-        {track.tidal && (
-          <a
-            href={track.tidal}
-            className="inline-flex items-center gap-2 rounded-sm border border-white/10 bg-white/5 px-3 py-2 text-[11px] text-neutral-300 transition hover:border-[#c8ff00]/40 hover:text-white"
-          >
-            <Music2 size={13} />
-            Tidal
-          </a>
-        )}
       </div>
     </article>
   );

@@ -1,7 +1,7 @@
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 
 function Vote() {
-  const voteUrl = "https://example.com";
+  const voteUrl = "https://orbiiit.com/en/participants/4613778f-421e-4deb-bff9-56fa024ea19a?contestId=f85717be-ba9b-4857-b885-ccbbb9a45757";
 
   return (
     <section
