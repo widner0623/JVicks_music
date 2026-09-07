@@ -40,7 +40,7 @@ const artist = {
   },
 
   voteUrl:
-    "https://orbiiit.com/en/participants/4613778f-421e-4deb-bff9-56fa024ea19a?contestId=f85717be-ba9b-4857-b885-ccbbb9a45757k",
+    "https://orbiiit.com/en/participants/4613778f-421e-4deb-bff9-56fa024ea19a?contestId=f85717be-ba9b-4857-b885-ccbbb9a45757",
 };
 
 export default artist;

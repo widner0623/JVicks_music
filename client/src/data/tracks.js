@@ -5,6 +5,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:40",
+    preview: "/audio/FallenStar.mp3",
     spotify:
       "https://open.spotify.com/track/3rAYC7uYjQuEn9DPLOeMNa?si=df6fbd2a5982410b",
     appleMusic:
@@ -20,6 +21,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2025",
     duration: "3:35",
+    preview: "/audio/Shine.mp3",
     spotify:
       "https://open.spotify.com/track/0wDbd2QvXXIh8tfdQUKZ5w?si=b54735e6fdb9437b",
     appleMusic:
@@ -35,6 +37,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:09",
+    preview: "/audio/big-dog.mp3",
     spotify:
       "https://open.spotify.com/track/1RjoMNEiGhfAaIRi9GLgb8?si=f67f89ddc6664be6",
     appleMusic:
@@ -50,6 +53,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:48",
+    preview: "/audio/maybe-one-day.mp3",
     spotify:
       "https://open.spotify.com/track/2erViu6yUvNRwuy7Zu1l5z?si=2f0c19452ae64953",
     appleMusic:
@@ -62,9 +66,10 @@ const tracks = [
   {
     id: 5,
     title: "Good Problems",
-    genre: "Hip-Hop / Rap",
+    genre: "Drill",
     year: "2026",
     duration: "3:08",
+    preview: "/audio/good-problems.mp3",
     spotify:
       "https://open.spotify.com/track/7JHPbTe24Mg1IKSIhFsjtt?si=64414aeeeba44eed",
     appleMusic:
@@ -80,6 +85,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:02",
+    preview: "/audio/playin-with-my-mental.mp3",
     spotify:
       "https://open.spotify.com/track/1ecdlReDMlwSSHUbt6OvBL?si=81ace4becfab4ad6",
     appleMusic:

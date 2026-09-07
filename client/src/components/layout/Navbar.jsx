@@ -76,25 +76,25 @@ function Navbar() {
   return (
     <header
       className={`fixed left-0 top-0 z-50 w-full border-b transition-all duration-300 ${
-        scrolled
-          ? "border-[#c8ff00]/15 bg-black/90 shadow-[0_10px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl"
+        scrolled || menuOpen
+          ? "border-[#c8ff00]/15 bg-black/95 shadow-[0_10px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl"
           : "border-transparent bg-black/40 backdrop-blur-md"
       }`}
     >
-      <div className="mx-auto flex h-[78px] w-[min(1200px,calc(100%-48px))] items-center justify-between">
+      <div className="mx-auto flex h-[72px] w-[min(1200px,calc(100%-32px))] items-center justify-between sm:h-[78px] sm:w-[min(1200px,calc(100%-48px))]">
+        {/* Logo */}
         <a
           href="#home"
           onClick={() => setMenuOpen(false)}
           className="font-serif text-xl font-bold tracking-tight text-white transition hover:opacity-80"
           aria-label={`${artist.name} home`}
         >
-          <span className="text-[#c8ff00]">
-            {firstLetter}
-          </span>{" "}
+          <span className="text-[#c8ff00]">{firstLetter}</span>{" "}
           {restOfName}
         </a>
 
-        <nav className="hidden items-center gap-10 md:flex">
+        {/* Desktop Navigation */}
+        <nav className="hidden items-center gap-8 md:flex lg:gap-10">
           {links.map((link) => {
             const section = link.href.replace("#", "");
             const isActive = activeSection === section;
@@ -123,6 +123,7 @@ function Navbar() {
           })}
         </nav>
 
+        {/* Mobile Menu Button */}
         <button
           type="button"
           className="relative z-50 flex h-10 w-10 items-center justify-center border border-white/10 bg-white/5 text-white transition hover:border-[#c8ff00]/40 hover:text-[#c8ff00] md:hidden"
@@ -130,15 +131,16 @@ function Navbar() {
           aria-label={menuOpen ? "Close navigation" : "Open navigation"}
           aria-expanded={menuOpen}
         >
-          {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          {menuOpen ? <X size={21} /> : <Menu size={21} />}
         </button>
       </div>
 
       <AnimatePresence>
         {menuOpen && (
           <>
+            {/* Background Overlay */}
             <motion.div
-              className="fixed inset-0 top-[78px] bg-black/70 backdrop-blur-sm md:hidden"
+              className="fixed inset-x-0 bottom-0 top-[72px] bg-black/80 backdrop-blur-md sm:top-[78px] md:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -146,11 +148,12 @@ function Navbar() {
               onClick={() => setMenuOpen(false)}
             />
 
+            {/* Mobile Navigation */}
             <motion.nav
-              className="relative z-40 flex flex-col border-t border-[#c8ff00]/10 bg-[#050505] px-6 py-4 md:hidden"
+              className="relative z-40 border-t border-[#c8ff00]/10 bg-[#050505] px-4 pb-6 sm:px-6 md:hidden"
               initial={{
                 opacity: 0,
-                y: -15,
+                y: -20,
               }}
               animate={{
                 opacity: 1,
@@ -158,52 +161,82 @@ function Navbar() {
               }}
               exit={{
                 opacity: 0,
-                y: -15,
+                y: -20,
               }}
               transition={{
-                duration: 0.25,
+                duration: 0.28,
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              {links.map((link, index) => {
-                const section = link.href.replace("#", "");
-                const isActive = activeSection === section;
+              <div className="mx-auto max-w-[1200px]">
+                {links.map((link, index) => {
+                  const section = link.href.replace("#", "");
+                  const isActive = activeSection === section;
 
-                return (
-                  <motion.a
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setMenuOpen(false)}
-                    className={`flex items-center justify-between border-b border-white/5 py-5 text-xs uppercase tracking-[0.18em] transition-colors ${
-                      isActive
-                        ? "text-[#c8ff00]"
-                        : "text-neutral-400 hover:text-white"
-                    }`}
-                    initial={{
-                      opacity: 0,
-                      x: -12,
-                    }}
-                    animate={{
-                      opacity: 1,
-                      x: 0,
-                    }}
-                    transition={{
-                      delay: index * 0.04,
-                      duration: 0.25,
-                    }}
-                  >
-                    <span>{link.label}</span>
-
-                    <span
-                      className={`h-1.5 w-1.5 rounded-full transition ${
+                  return (
+                    <motion.a
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setMenuOpen(false)}
+                      className={`group flex items-center justify-between border-b border-white/5 py-5 text-sm font-bold uppercase tracking-[0.18em] transition-colors ${
                         isActive
-                          ? "bg-[#c8ff00]"
-                          : "bg-neutral-800"
+                          ? "text-[#c8ff00]"
+                          : "text-neutral-400 hover:text-white"
                       }`}
-                    />
-                  </motion.a>
-                );
-              })}
+                      initial={{
+                        opacity: 0,
+                        x: -12,
+                      }}
+                      animate={{
+                        opacity: 1,
+                        x: 0,
+                      }}
+                      transition={{
+                        delay: index * 0.05,
+                        duration: 0.25,
+                      }}
+                    >
+                      <span>{link.label}</span>
+
+                      <div className="flex items-center gap-3">
+                        {isActive && (
+                          <span className="text-[9px] font-normal uppercase tracking-[0.18em] text-[#c8ff00]/60">
+                            Current
+                          </span>
+                        )}
+
+                        <span
+                          className={`h-1.5 w-1.5 rounded-full transition ${
+                            isActive
+                              ? "bg-[#c8ff00]"
+                              : "bg-neutral-800 group-hover:bg-neutral-600"
+                          }`}
+                        />
+                      </div>
+                    </motion.a>
+                  );
+                })}
+
+                {/* Mobile Menu Footer */}
+                <motion.div
+                  className="pt-6"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    delay: 0.22,
+                    duration: 0.3,
+                  }}
+                >
+                  <p className="text-[9px] uppercase tracking-[0.22em] text-neutral-700">
+                    Official Artist Website
+                  </p>
+
+                  <p className="mt-2 font-serif text-lg text-white">
+                    <span className="text-[#c8ff00]">{firstLetter}</span>{" "}
+                    {restOfName}
+                  </p>
+                </motion.div>
+              </div>
             </motion.nav>
           </>
         )}
