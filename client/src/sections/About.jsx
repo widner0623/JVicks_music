@@ -1,3 +1,4 @@
+import jvickAbout from "../assets/images/jvick_about.jpg";
 import {
   FaInstagram,
   FaSpotify,
@@ -45,7 +46,7 @@ function About() {
 
             <div className="group relative overflow-hidden bg-neutral-900">
               <img
-                src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5f79"
+                src={jvickAbout}
                 alt={`${artist.name} artist portrait placeholder`}
                 className="aspect-[4/5] h-full w-full object-cover grayscale transition duration-700 group-hover:scale-[1.03]"
               />
