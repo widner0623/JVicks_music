@@ -5,7 +5,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:40",
-    preview: "/audio/FallenStar.mp3",
+    preview: "/audio/TellMeWhatToDo.mp3",
     spotify:
       "https://open.spotify.com/track/3rAYC7uYjQuEn9DPLOeMNa?si=df6fbd2a5982410b",
     appleMusic:
@@ -21,7 +21,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2025",
     duration: "3:35",
-    preview: "/audio/Shine.mp3",
+    preview: "/audio/TakeItToTheRing.mp3",
     spotify:
       "https://open.spotify.com/track/0wDbd2QvXXIh8tfdQUKZ5w?si=b54735e6fdb9437b",
     appleMusic:
@@ -37,7 +37,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:09",
-    preview: "/audio/big-dog.mp3",
+    preview: "/audio/BigDog.mp3",
     spotify:
       "https://open.spotify.com/track/1RjoMNEiGhfAaIRi9GLgb8?si=f67f89ddc6664be6",
     appleMusic:
@@ -53,7 +53,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:48",
-    preview: "/audio/maybe-one-day.mp3",
+    preview: "/audio/MaybeOneDay.mp3",
     spotify:
       "https://open.spotify.com/track/2erViu6yUvNRwuy7Zu1l5z?si=2f0c19452ae64953",
     appleMusic:
@@ -65,19 +65,19 @@ const tracks = [
   },
   {
     id: 5,
-    title: "Good Problems",
-    genre: "Drill",
+    title: "Problem Child",
+    genre: "Hip-Hop / Rap",
     year: "2026",
-    duration: "3:08",
-    preview: "/audio/good-problems.mp3",
+    duration: "3:46",
+    preview: "/audio/ProblemChild.mp3",
     spotify:
-      "https://open.spotify.com/track/7JHPbTe24Mg1IKSIhFsjtt?si=64414aeeeba44eed",
+      "https://open.spotify.com/track/7itJcYP0FzQsPFXKHvKyNH?si=60ab9f4be4154a61",
     appleMusic:
-      "https://music.apple.com/us/song/good-problems/6776294191",
+      "https://music.apple.com/us/song/problem-child/6800148254",
     youtubeMusic:
-      "https://music.youtube.com/playlist?list=OLAK5uy_kbTnTE1-SynZ_wWJqrO4X03qJDn2Gm7Bk&si=NGb-cz9NPWcvh4Dd",
+      "https://music.youtube.com/watch?v=ZRJizoqBztw&si=2u-4ny0Uq2YhjugF",
     amazonMusic:
-      "https://music.amazon.com/albums/B0H3VV1GKV?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_0GWPeIEckaSHvg7yrZSRne4BR",
+      "https://music.amazon.com/tracks/B0HDRDMVQ7?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_4g3rsKbWlOAyDVpcdK7sqsEY4",
   },
   {
     id: 6,
@@ -85,7 +85,7 @@ const tracks = [
     genre: "Hip-Hop / Rap",
     year: "2026",
     duration: "3:02",
-    preview: "/audio/playin-with-my-mental.mp3",
+    preview: "/audio/PlayinWithMyMental.mp3",
     spotify:
       "https://open.spotify.com/track/1ecdlReDMlwSSHUbt6OvBL?si=81ace4becfab4ad6",
     appleMusic:
