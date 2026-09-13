@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import artist from "../data/artist";
+import backgroundImage from "../assets/images/background.jpg";
 
 function Hero() {
   const genreLine = artist.genres.join(" · ");
@@ -10,7 +11,7 @@ function Hero() {
       className="relative flex min-h-[100svh] items-center overflow-hidden bg-black"
     >
       <motion.img
-        src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a"
+        src={backgroundImage}
         alt={`${artist.name} concert performance placeholder`}
         className="absolute inset-0 h-full w-full object-cover object-[62%_center] sm:object-center"
         initial={{ scale: 1.06, opacity: 0 }}
