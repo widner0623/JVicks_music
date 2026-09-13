@@ -21,7 +21,7 @@ function Footer() {
                 href="#home"
                 className="inline-block font-serif text-3xl font-semibold tracking-tight text-white transition hover:opacity-80"
               >
-                <span className="text-[#c8ff00]">
+                <span className="text-[#9003fc]">
                   {artist.name.charAt(0)}
                 </span>{" "}
                 {artist.name.slice(1).toUpperCase()}
@@ -41,7 +41,7 @@ function Footer() {
             <div className="grid grid-cols-2 gap-8 md:col-span-2 lg:col-span-1 lg:contents">
               {/* Navigation */}
               <div>
-                <p className="mb-4 text-[9px] font-bold uppercase tracking-[0.22em] text-[#c8ff00] sm:mb-5 sm:text-[10px] sm:tracking-[0.25em]">
+                <p className="mb-4 text-[9px] font-bold uppercase tracking-[0.22em] text-[#9003fc] sm:mb-5 sm:text-[10px] sm:tracking-[0.25em]">
                   Explore
                 </p>
 
@@ -52,7 +52,7 @@ function Footer() {
                       href={link.href}
                       className="group flex w-fit items-center gap-2 text-[10px] uppercase tracking-[0.14em] text-neutral-500 transition-colors duration-300 hover:text-white sm:text-xs sm:tracking-[0.16em]"
                     >
-                      <span className="h-px w-0 bg-[#c8ff00] transition-all duration-300 group-hover:w-4" />
+                      <span className="h-px w-0 bg-[#9003fc] transition-all duration-300 group-hover:w-4" />
 
                       {link.label}
                     </a>
@@ -62,7 +62,7 @@ function Footer() {
 
               {/* Genres */}
               <div>
-                <p className="mb-4 text-[9px] font-bold uppercase tracking-[0.22em] text-[#c8ff00] sm:mb-5 sm:text-[10px] sm:tracking-[0.25em]">
+                <p className="mb-4 text-[9px] font-bold uppercase tracking-[0.22em] text-[#9003fc] sm:mb-5 sm:text-[10px] sm:tracking-[0.25em]">
                   Genres
                 </p>
 
@@ -84,7 +84,7 @@ function Footer() {
               href="https://redlinesystemsco.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#c8ff00] transition hover:text-[#ddff51] hover:underline"
+              className="text-[#9003fc] transition hover:text-[#ddff51] hover:underline"
             >
               Redline Systems Co.
             </a>

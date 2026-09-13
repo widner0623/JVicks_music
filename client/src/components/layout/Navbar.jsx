@@ -77,7 +77,7 @@ function Navbar() {
     <header
       className={`fixed left-0 top-0 z-50 w-full border-b transition-all duration-300 ${
         scrolled || menuOpen
-          ? "border-[#c8ff00]/15 bg-black/95 shadow-[0_10px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl"
+          ? "border-[#9003fc]/15 bg-black/95 shadow-[0_10px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl"
           : "border-transparent bg-black/40 backdrop-blur-md"
       }`}
     >
@@ -89,7 +89,7 @@ function Navbar() {
           className="font-serif text-xl font-bold tracking-tight text-white transition hover:opacity-80"
           aria-label={`${artist.name} home`}
         >
-          <span className="text-[#c8ff00]">{firstLetter}</span>{" "}
+          <span className="text-[#9003fc]">{firstLetter}</span>{" "}
           {restOfName}
         </a>
 
@@ -105,14 +105,14 @@ function Navbar() {
                 href={link.href}
                 className={`group relative text-xs uppercase tracking-[0.18em] transition-colors duration-300 ${
                   isActive
-                    ? "text-[#c8ff00]"
+                    ? "text-[#9003fc]"
                     : "text-neutral-500 hover:text-white"
                 }`}
               >
                 {link.label}
 
                 <span
-                  className={`absolute -bottom-2 left-0 h-px bg-[#c8ff00] transition-all duration-300 ${
+                  className={`absolute -bottom-2 left-0 h-px bg-[#9003fc] transition-all duration-300 ${
                     isActive
                       ? "w-full"
                       : "w-0 group-hover:w-full"
@@ -126,7 +126,7 @@ function Navbar() {
         {/* Mobile Menu Button */}
         <button
           type="button"
-          className="relative z-50 flex h-10 w-10 items-center justify-center border border-white/10 bg-white/5 text-white transition hover:border-[#c8ff00]/40 hover:text-[#c8ff00] md:hidden"
+          className="relative z-50 flex h-10 w-10 items-center justify-center border border-white/10 bg-white/5 text-white transition hover:border-[#9003fc]/40 hover:text-[#9003fc] md:hidden"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label={menuOpen ? "Close navigation" : "Open navigation"}
           aria-expanded={menuOpen}
@@ -150,7 +150,7 @@ function Navbar() {
 
             {/* Mobile Navigation */}
             <motion.nav
-              className="relative z-40 border-t border-[#c8ff00]/10 bg-[#050505] px-4 pb-6 sm:px-6 md:hidden"
+              className="relative z-40 border-t border-[#9003fc]/10 bg-[#050505] px-4 pb-6 sm:px-6 md:hidden"
               initial={{
                 opacity: 0,
                 y: -20,
@@ -180,7 +180,7 @@ function Navbar() {
                       onClick={() => setMenuOpen(false)}
                       className={`group flex items-center justify-between border-b border-white/5 py-5 text-sm font-bold uppercase tracking-[0.18em] transition-colors ${
                         isActive
-                          ? "text-[#c8ff00]"
+                          ? "text-[#9003fc]"
                           : "text-neutral-400 hover:text-white"
                       }`}
                       initial={{
@@ -200,7 +200,7 @@ function Navbar() {
 
                       <div className="flex items-center gap-3">
                         {isActive && (
-                          <span className="text-[9px] font-normal uppercase tracking-[0.18em] text-[#c8ff00]/60">
+                          <span className="text-[9px] font-normal uppercase tracking-[0.18em] text-[#9003fc]/60">
                             Current
                           </span>
                         )}
@@ -208,7 +208,7 @@ function Navbar() {
                         <span
                           className={`h-1.5 w-1.5 rounded-full transition ${
                             isActive
-                              ? "bg-[#c8ff00]"
+                              ? "bg-[#9003fc]"
                               : "bg-neutral-800 group-hover:bg-neutral-600"
                           }`}
                         />
@@ -232,7 +232,7 @@ function Navbar() {
                   </p>
 
                   <p className="mt-2 font-serif text-lg text-white">
-                    <span className="text-[#c8ff00]">{firstLetter}</span>{" "}
+                    <span className="text-[#9003fc]">{firstLetter}</span>{" "}
                     {restOfName}
                   </p>
                 </motion.div>

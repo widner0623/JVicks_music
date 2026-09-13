@@ -107,8 +107,8 @@ function TrackCard({ track, isActive, onPlay, onPause }) {
     <article
       className={`group flex h-full flex-col border bg-[#0d0d0d] p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-[#101010] sm:p-5 ${
         isActive
-          ? "border-[#c8ff00]/70"
-          : "border-[#c8ff00]/20 hover:border-[#c8ff00]/60"
+          ? "border-[#9003fc]/70"
+          : "border-[#9003fc]/20 hover:border-[#9003fc]/60"
       }`}
     >
       <audio
@@ -132,10 +132,10 @@ function TrackCard({ track, isActive, onPlay, onPause }) {
                 ? `Pause ${track.title}`
                 : `Play ${track.title}`
             }
-            className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#c8ff00] transition-all duration-300 hover:scale-105 sm:h-12 sm:w-12 ${
+            className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#9003fc] transition-all duration-300 hover:scale-105 sm:h-12 sm:w-12 ${
               isPlaying
-                ? "bg-[#c8ff00] text-[#050505]"
-                : "text-[#c8ff00] hover:bg-[#c8ff00] hover:text-[#050505]"
+                ? "bg-[#9003fc] text-[#050505]"
+                : "text-[#9003fc] hover:bg-[#9003fc] hover:text-[#050505]"
             }`}
           >
             {isPlaying ? (
@@ -158,7 +158,7 @@ function TrackCard({ track, isActive, onPlay, onPause }) {
             </div>
 
             <div className="mt-2 flex flex-wrap items-center gap-2">
-              <span className="border border-[#c8ff00]/40 bg-[#c8ff00]/10 px-2 py-1 text-[9px] uppercase tracking-[0.1em] text-[#c8ff00] sm:text-[10px] sm:tracking-[0.12em]">
+              <span className="border border-[#9003fc]/40 bg-[#9003fc]/10 px-2 py-1 text-[9px] uppercase tracking-[0.1em] text-[#9003fc] sm:text-[10px] sm:tracking-[0.12em]">
                 {track.genre}
               </span>
 
@@ -180,7 +180,7 @@ function TrackCard({ track, isActive, onPlay, onPause }) {
           value={currentTime}
           onChange={handleSeek}
           aria-label={`Seek ${track.title}`}
-          className="h-[3px] w-full cursor-pointer accent-[#c8ff00]"
+          className="h-[3px] w-full cursor-pointer accent-[#9003fc]"
         />
 
         <div className="mt-2 flex items-center justify-between text-[9px] text-neutral-600 sm:text-[10px]">
@@ -202,7 +202,7 @@ function TrackCard({ track, isActive, onPlay, onPause }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Listen to ${track.title} on Spotify`}
-            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#c8ff00]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
+            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#9003fc]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
           >
             <FaSpotify size={14} />
             <span>Spotify</span>
@@ -215,7 +215,7 @@ function TrackCard({ track, isActive, onPlay, onPause }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Listen to ${track.title} on Apple Music`}
-            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#c8ff00]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
+            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#9003fc]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
           >
             <BsAppleMusic size={14} />
             <span>Apple Music</span>
@@ -228,7 +228,7 @@ function TrackCard({ track, isActive, onPlay, onPause }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Listen to ${track.title} on YouTube Music`}
-            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#c8ff00]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
+            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#9003fc]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
           >
             <FaYoutube size={14} />
             <span>YouTube Music</span>
@@ -241,7 +241,7 @@ function TrackCard({ track, isActive, onPlay, onPause }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Listen to ${track.title} on Amazon Music`}
-            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#c8ff00]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
+            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#9003fc]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
           >
             <FaAmazon size={14} />
             <span>Amazon Music</span>
@@ -254,7 +254,7 @@ function TrackCard({ track, isActive, onPlay, onPause }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Listen to ${track.title} on SoundCloud`}
-            className="col-span-2 inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#c8ff00]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
+            className="col-span-2 inline-flex min-h-10 items-center justify-center gap-2 rounded-sm border border-white/10 bg-white/5 px-2.5 py-2 text-[10px] text-neutral-300 transition-all duration-300 hover:border-[#9003fc]/40 hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]"
           >
             <FaSoundcloud size={14} />
             <span>SoundCloud</span>

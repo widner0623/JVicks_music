@@ -57,7 +57,7 @@ function SocialLinks() {
             rel="noopener noreferrer"
             aria-label={`${artist.name} on ${social.name}`}
             title={social.name}
-            className="group flex h-10 w-10 items-center justify-center border border-white/10 bg-white/5 text-neutral-400 transition-all duration-300 hover:-translate-y-1 hover:border-[#c8ff00]/50 hover:bg-[#c8ff00]/5 hover:text-[#c8ff00]"
+            className="group flex h-10 w-10 items-center justify-center border border-white/10 bg-white/5 text-neutral-400 transition-all duration-300 hover:-translate-y-1 hover:border-[#9003fc]/50 hover:bg-[#9003fc]/5 hover:text-[#9003fc]"
           >
             <Icon
               size={17}

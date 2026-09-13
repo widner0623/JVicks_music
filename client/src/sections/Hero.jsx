@@ -45,7 +45,7 @@ function Hero() {
           }}
         >
           <motion.p
-            className="mb-5 max-w-[90%] text-[10px] font-bold uppercase leading-5 tracking-[0.22em] text-[#c8ff00] sm:mb-7 sm:max-w-none sm:text-xs sm:tracking-[0.28em]"
+            className="mb-5 max-w-[90%] text-[10px] font-bold uppercase leading-5 tracking-[0.22em] text-[#9003fc] sm:mb-7 sm:max-w-none sm:text-xs sm:tracking-[0.28em]"
             initial={{
               opacity: 0,
               x: -18,
@@ -65,7 +65,7 @@ function Hero() {
 
           <div className="mb-6 sm:mb-8">
             <motion.span
-              className="block font-serif text-[clamp(4.25rem,22vw,7rem)] font-bold leading-[0.82] text-[#c8ff00] sm:text-[clamp(5rem,9vw,9rem)]"
+              className="block font-serif text-[clamp(4.25rem,22vw,7rem)] font-bold leading-[0.82] text-[#9003fc] sm:text-[clamp(5rem,9vw,9rem)]"
               initial={{
                 opacity: 0,
                 x: -25,
@@ -140,14 +140,14 @@ function Hero() {
           >
             <a
               href="#music"
-              className="flex h-13 w-full items-center justify-center bg-[#c8ff00] px-6 text-xs font-bold uppercase tracking-[0.16em] text-[#050505] transition duration-300 hover:-translate-y-0.5 hover:bg-[#ddff51] sm:w-auto sm:min-w-36"
+              className="flex h-13 w-full items-center justify-center bg-[#9003fc] px-6 text-xs font-bold uppercase tracking-[0.16em] text-[#050505] transition duration-300 hover:-translate-y-0.5 hover:bg-[#ddff51] sm:w-auto sm:min-w-36"
             >
               Listen Now
             </a>
 
             <a
               href="#about"
-              className="flex h-13 w-full items-center justify-center border border-[#c8ff00]/30 bg-black/30 px-6 text-xs font-bold uppercase tracking-[0.16em] text-white transition duration-300 hover:-translate-y-0.5 hover:border-[#c8ff00] hover:text-[#c8ff00] sm:w-auto sm:min-w-36"
+              className="flex h-13 w-full items-center justify-center border border-[#9003fc]/30 bg-black/30 px-6 text-xs font-bold uppercase tracking-[0.16em] text-white transition duration-300 hover:-translate-y-0.5 hover:border-[#9003fc] hover:text-[#9003fc] sm:w-auto sm:min-w-36"
             >
               About
             </a>
@@ -174,7 +174,7 @@ function Hero() {
         <span>Scroll</span>
 
         <motion.span
-          className="h-12 w-px bg-gradient-to-b from-[#c8ff00] to-transparent"
+          className="h-12 w-px bg-gradient-to-b from-[#9003fc] to-transparent"
           animate={{
             scaleY: [1, 0.65, 1],
             opacity: [1, 0.45, 1],

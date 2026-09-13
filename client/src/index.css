@@ -53,12 +53,12 @@
 
   button:focus-visible,
   a:focus-visible {
-    outline: 1px solid #c8ff00;
+    outline: 1px solid #9003fc;
     outline-offset: 4px;
   }
 
   ::selection {
-    background: #c8ff00;
+    background: #9003fc;
     color: #000000;
   }
 }

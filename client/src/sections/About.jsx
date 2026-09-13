@@ -36,13 +36,13 @@ function About() {
   return (
     <section
       id="about"
-      className="border-b border-[#c8ff00]/15 bg-[#090909] py-20 sm:py-24 md:py-32"
+      className="border-b border-[#9003fc]/15 bg-[#090909] py-20 sm:py-24 md:py-32"
     >
       <div className="mx-auto grid w-[min(1200px,calc(100%-32px))] gap-10 sm:w-[min(1200px,calc(100%-48px))] sm:gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         {/* Artist Image */}
         <Reveal y={30}>
           <div className="relative mx-auto w-full max-w-[520px] lg:mx-0 lg:max-w-none">
-            <div className="absolute -left-2 -top-2 h-full w-full border border-[#c8ff00]/30 sm:-left-3 sm:-top-3" />
+            <div className="absolute -left-2 -top-2 h-full w-full border border-[#9003fc]/30 sm:-left-3 sm:-top-3" />
 
             <div className="group relative overflow-hidden bg-neutral-900">
               <img
@@ -54,7 +54,7 @@ function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
 
               <div className="absolute bottom-4 left-4 sm:bottom-5 sm:left-5">
-                <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#c8ff00] sm:text-[10px] sm:tracking-[0.25em]">
+                <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-[#9003fc] sm:text-[10px] sm:tracking-[0.25em]">
                   Independent Artist
                 </p>
 
@@ -69,7 +69,7 @@ function About() {
         {/* About Content */}
         <Reveal delay={0.12} y={30}>
           <div>
-            <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.22em] text-[#c8ff00] sm:mb-4 sm:text-xs sm:tracking-[0.28em]">
+            <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.22em] text-[#9003fc] sm:mb-4 sm:text-xs sm:tracking-[0.28em]">
               02 — The Artist
             </p>
 
@@ -85,7 +85,7 @@ function About() {
             </div>
 
             {/* Quote */}
-            <blockquote className="my-8 border-l-2 border-[#c8ff00] pl-4 sm:my-10 sm:pl-6">
+            <blockquote className="my-8 border-l-2 border-[#9003fc] pl-4 sm:my-10 sm:pl-6">
               <p className="font-serif text-xl italic leading-relaxed text-white sm:text-2xl md:text-3xl">
                 “{artist.quote}”
               </p>
@@ -121,7 +121,7 @@ function About() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${artist.name} on ${social.name}`}
-                      className="group inline-flex min-h-11 items-center gap-2 border border-white/10 bg-white/5 px-3 py-2.5 text-[10px] uppercase tracking-[0.12em] text-neutral-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#c8ff00]/50 hover:bg-white/10 hover:text-[#c8ff00] sm:px-4 sm:py-3 sm:text-xs sm:tracking-[0.14em]"
+                      className="group inline-flex min-h-11 items-center gap-2 border border-white/10 bg-white/5 px-3 py-2.5 text-[10px] uppercase tracking-[0.12em] text-neutral-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#9003fc]/50 hover:bg-white/10 hover:text-[#9003fc] sm:px-4 sm:py-3 sm:text-xs sm:tracking-[0.14em]"
                     >
                       <Icon
                         size={16}

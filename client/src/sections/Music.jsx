@@ -20,12 +20,12 @@ function Music() {
   return (
     <section
       id="music"
-      className="border-b border-[#c8ff00]/15 bg-[#050505] py-20 sm:py-24 md:py-32"
+      className="border-b border-[#9003fc]/15 bg-[#050505] py-20 sm:py-24 md:py-32"
     >
       <div className="mx-auto w-[min(1200px,calc(100%-32px))] sm:w-[min(1200px,calc(100%-48px))]">
         <Reveal>
           <div className="mb-10 sm:mb-12">
-            <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.22em] text-[#c8ff00] sm:mb-4 sm:text-xs sm:tracking-[0.28em]">
+            <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.22em] text-[#9003fc] sm:mb-4 sm:text-xs sm:tracking-[0.28em]">
               01 — Discography
             </p>
 
@@ -40,7 +40,7 @@ function Music() {
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-px bg-[#c8ff00]/20 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-px bg-[#9003fc]/20 md:grid-cols-2 xl:grid-cols-3">
           {tracks.map((track, index) => (
             <Reveal
               key={track.id}
